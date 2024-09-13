@@ -5,7 +5,7 @@ public record Event(
         Integer[] values
 ) {
 
-    public Integer getMaxValue() {
+    public Integer maxValue() {
         Integer maxValue = null;
         for (Integer value : values) {
             if (maxValue == null || value > maxValue) {

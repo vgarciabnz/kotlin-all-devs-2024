@@ -9,7 +9,7 @@ public class EventService {
         Integer maxValue = null;
 
         for (Event event : events) {
-            Integer maxEventValue = event.getMaxValue();
+            Integer maxEventValue = event.maxValue();
             if (maxValue == null || (maxEventValue != null && maxEventValue > maxValue)) {
                 maxValue = maxEventValue;
                 eventUid = event.uid();
